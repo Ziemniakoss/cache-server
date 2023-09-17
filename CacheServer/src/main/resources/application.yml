@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    # TODO dont store password once we setup real db
+    username: postgres
+    password: ""
