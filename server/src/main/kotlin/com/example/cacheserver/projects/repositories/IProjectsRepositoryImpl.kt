@@ -1,14 +1,13 @@
 package com.example.cacheserver.projects.repositories
 
 import com.example.cacheserver.projects.Project
-import com.fasterxml.jackson.module.kotlin.jsonMapper
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.jdbc.core.JdbcTemplate
 import org.springframework.jdbc.core.ResultSetExtractor
 import org.springframework.jdbc.core.RowMapper
 import org.springframework.stereotype.Repository
 import java.sql.ResultSet
-import java.util.UUID
+import java.util.*
 
 @Repository
 class IProjectsRepositoryImpl(@Autowired private val jdbcTemplate: JdbcTemplate) : IProjectsRepository {

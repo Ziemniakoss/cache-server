@@ -1,0 +1,7 @@
+version: "3"
+services:
+  #  TODO server container and better networking
+  cache-pgsql-server:
+    build: "./db"
+    ports:
+      - "5432:5432"
