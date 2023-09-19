@@ -1,0 +1,32 @@
+<html dir="ltr" lang="en">
+<head>
+    <title>Control Panel</title>
+</head>
+<main>
+    <h1>Cache server</h1>
+    <h2>Your Projects</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="project : ${projects}">
+            <td>
+                <a th:href="'/' + ${project.id}" th:text="${project.name}"></a>
+            </td>
+            <td th:text="${project.description}">
+            </td>
+            <td>
+                <button>Edit</button>
+                <button>Share</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</html>
